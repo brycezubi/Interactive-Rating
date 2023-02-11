@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png" />
+
+    <title>Frontend Mentor | Interactive rating component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+
+    <link rel="stylesheet" href="css/index.css" />
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+    <!-- Rating state start -->
+    <main class="card card__rating">
+      <div class="card__img">
+        <img  src="images/icon-star.svg" alt="star" />
+      </div>
+      <h1>How did we do?</h1>
+      <p class='card__paragraph'>
+        Please let us know how we did with your support request. All feedback is
+        appreciated to help us improve our offering!
+      </p>
+      <ul class="btn__container">
+        <button class="btn active">1</button>
+        <button class="btn">2</button>
+        <button class="btn">3</button>
+        <button class="btn">4</button>
+        <button class="btn">5</button>
+      </ul>
+      <button class="cta">Submit</button>
+    </main>
+
+    <!-- Rating state end -->
+
+    <!-- Thank you state start -->
+    <main class="card card__thank">
+      <img src="images/illustration-thank-you.svg" alt="ilustration thank you">
+      <p class="card__outline">You selected <span class="number">4</span> out of 5</p>
+      <div class="card__content">
+        <h1>Thank you!</h1>
+        <p>We appreciate you taking the time to give a rating. If
+          you ever need more support, don’t hesitate to get in touch!</p>
+      </div>
+    </main>
+  </body>
+</html>

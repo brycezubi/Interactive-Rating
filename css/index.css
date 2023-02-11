@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;600;700&display=swap');
+:root{
+  --Orange: hsl(25, 97%, 53%);
+  --White: hsl(0, 0%, 100%);
+  --LightGrey: hsl(217, 12%, 63%);
+  --MediumGrey: hsl(216, 12%, 54%);
+  --DarkBlue: hsl(213, 19%, 18%);
+  --VeryDarkBlue: hsl(216, 12%, 8%);
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-size: 1.5rem;
+  font-family: 'Overpass', sans-serif;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background-color: var(--VeryDarkBlue);
+}
+
+
+li{
+  list-style: none;
+}
+.card{
+  --VeryDarkBlue: hsla(213, 14%, 13%, 0.418);
+  max-width: 40rem;
+  background: linear-gradient(180deg, var(--DarkBlue) 10%, var(--VeryDarkBlue) 80%);
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: center;
+  padding: 2.5rem;
+  border-radius: 1.5rem;
+}
+
+.card__img{
+  width: 100%;
+}
+.card__img img{
+  --DarkBlue: hsla(214, 21%, 21%, 0.884);
+  padding: 0.85rem;
+  border-radius: 50%;
+  background-color: var(--DarkBlue);
+
+}
+
+.card h1{
+  color: var(--White);
+  font-size: 2.4rem;
+  width: 100%;
+}
+
+.card .card__paragraph{
+  color: var(--LightGrey);
+}
+
+.card li{
+  color: var(--LightGrey);
+}
+
+.card ul{
+  --DarkBlue: hsla(214, 21%, 21%, 0.884);
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+.card .btn{
+  --VeryDarkBlue: hsla(213, 14%, 13%, 0.418);
+  font-weight: 600;
+  cursor: pointer;
+  padding: 1rem 1.41rem;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  color: var(--LightGrey);
+  background-color: var(--VeryDarkBlue);
+}
+
+.card .btn:hover{
+  background-color: var(--LightGrey);
+  color: var(--White);
+}
+
+.card .btn:active{
+  background-color: var(--Orange);
+}
+
+.card .btn:focus{
+  background-color: var(--Orange);
+  color: var(--White);
+}
+
+
+.card ul li:hover{
+  color: var(--White);
+  background-color: var(--Orange);
+}
+
+.card ul li::selection{
+  background-color: var(--MediumGrey);
+  color: white;
+}
+
+.card .cta{
+  width: 100%;
+  padding: 1.65rem;
+  border-radius: 2.5rem;
+  border: none;
+  outline: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 600;
+  font-size: 1.4rem;
+  color: var(--White);
+  background-color: var(--Orange);
+  cursor: pointer;
+}
+
+.card .cta:hover{
+  opacity: 0.8;
+}
+
+.card .cta:active{
+  color: var(--Orange);
+  background-color: var(--White);
+}
+
+/* Card Thank You */
+.card__thank{
+  display: none;
+}
+.card__outline{
+  padding: 0.5rem 1.5rem;
+  border-radius: 1.5rem;
+  background-color: var(--DarkBlue);
+  color: var(--Orange);
+}
+.card__content{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  color: var(--LightGrey);
+}
